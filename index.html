@@ -4,7 +4,234 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <style>
+body{
+    
+    max-width: 100%;
+    background: #000;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.back{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/fa4630b1-ca1e-4788-94a9-eccef9f7af86/web_tall_panel/IN-en-20250407-TRIFECTA-perspective_8be2cd93-f2e6-4e34-acba-05b716385704_large.jpg);
+    transition: background-image 0.2s ease-in-out;
+    filter: blur(16px);
+    position: absolute;
+    width: 100%;
+    opacity: 0.16;
+    mask-image: linear-gradient(rgb(217, 217, 217) 78.62%, rgba(115, 115, 115, 0) 100%);
+    height: 78.5rem;
+    
+}
+.backf1{
+    opacity: 75%;
+    background: radial-gradient(92.16% 100% at 49.87% 0%, rgba(247, 99, 107, 0.3) 19.86%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    height: 75rem;
+    width: 100%;
+}
+.backf2{
+    background: radial-gradient(50% 100% at 50% 0%, rgba(44, 66, 156, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    height: 75rem;
+    width: 100%;
+}
+.background{
+    width: 100%;
+    background: #0f0f0f;
+    position: relative;
+}
+.position{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+    height: 90px;
+
+
+}
+.blend{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8000) 0.000%, rgba(0, 0, 0, 0.7889) 8.333%, rgba(0, 0, 0, 0.7556) 16.67%, rgba(0, 0, 0, 0.7000) 25.00%, rgba(0, 0, 0, 0.6222) 33.33%, rgba(0, 0, 0, 0.5222) 41.67%, rgba(0, 0, 0, 0.4000) 50.00%, rgba(0, 0, 0, 0.2778) 58.33%, rgba(0, 0, 0, 0.1778) 66.67%, rgba(0, 0, 0, 0.1000) 75.00%, rgba(0, 0, 0, 0.04444) 83.33%, rgba(0, 0, 0, 0.01111) 91.67%, rgba(0, 0, 0, 0.000) 100.0%);
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100px;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.relative{
+    position: relative;
+    width: 100%;
+}
+.middle{
+    width: 100%;
+    max-width: 120rem;
+    height: 7.5rem;
+    margin: 0 auto -7.5rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    width: 100%;
+    height: 5.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo img{
+    margin: 2rem;
+    width: 9.25rem;
+    height: 2.5rem;
+}
+.button{
+    /* margin: 2rem;
+    width: 9.25rem;
+    height: 2.5rem;
+    align-items: center; */
+    /* font-size: large; */
+}
+.lng{
+    background-color: #6f696927;
+    padding: 3px 15px;
+    color: white;
+    border-radius: 210px;
+    border: 0;
+    font-size: large;
+    cursor: pointer;
+    
+
+}
+.sign{
+    padding: 3px 15px;
+    border:0;;
+    border-radius: 210px;
+    font-size: large;
+    cursor: pointer;
+    
+}
+.list{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 35px;
+    border: 0;
+    border-radius: 30px;
+    padding:10px 24px;
+    background-color: #00000082;
+    margin: auto;
+    width: 550px;
+    opacity: 100%;
+    cursor: pointer;
+}
+.li{
+    font-family: sans-serif;
+    color: white;
+    
+    font-size: larger;
+    color: rgba(255, 255, 255, 0.788);
+    font-weight: 600;
+   
+    }
+
+.li:hover{
+    transform: scale(1.1);
+    color: white;
+}
+.content{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10rem;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    height: 100%;
+    
+        margin: auto;
+    
+    
+}
+/* .content img{
+    background-image: url(image/banner.jpg);
+    opacity: 100%;
+    margin-top: 10rem;
+    width: 90vw;
+    height: 34vw;
+    /* z-index: 5;
+    object-fit: cover;
+    object-position: center; */
+   
+.image img{
+    position: absolute;
+    top:10rem;
+    height: 40vw;
+    width: 90vw;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-mask-image: radial-gradient(103% 12% at 50% 102%, transparent 50%, white 51%);
+    mask-image: radial-gradient(103% 12% at 50% 102%, transparent 50%, white 51%);
+   
+    
+    
+    
+
+    
+}
+.subcont{
+    background-image: linear-gradient(360deg, rgba(0, 0, 0, 0.90) 31.45%, rgba(0, 0, 0, 0.7) 75%, rgba(0, 0, 0, 0.55) 84.5%);
+    position: absolute;
+    top:10rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    width: 90vw;
+    margin: auto;
+    height: 40vw;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    /* position: absolute; */
+    /* width: 100%;
+    height: 100%; */
+    pointer-events: none;
+    -webkit-mask-image: radial-gradient(103% 12% at 50% 102%, transparent 50%, white 51%);
+    mask-image: radial-gradient(103% 12% at 50% 102%, transparent 50%, white 51%);
+   
+    
+}
+.lng:hover{
+    transform: scale(1.1);
+}
+.sign:hover{
+    transform: scale(1.1);
+}
+
+
+    </style>
 </head>
 <body>
     <div class="background">
@@ -48,7 +275,7 @@
                 <div class="subcont">
                 </div>
                 <div class="image">
-                    <img src="image/banner.jpg " alt="">
+                    <img src="https://assets.nflxext.com/ffe/siteui/vlv3/fa4630b1-ca1e-4788-94a9-eccef9f7af86/web_tall_panel/IN-en-20250407-TRIFECTA-perspective_8be2cd93-f2e6-4e34-acba-05b716385704_large.jpg" alt="">
                 </div>
             </div>
         </div>
